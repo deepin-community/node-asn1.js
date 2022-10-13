@@ -1,0 +1,31 @@
+From 7566ced6a0161a15230e4f7afdb8982fa12257b7 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Fri, 10 Nov 2017 13:26:03 +0100
+Subject: Use local install of ans1.js
+
+Forwarded: no
+---
+ rfc/2560/index.js | 2 +-
+ rfc/5280/index.js | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+--- a/rfc/2560/index.js
++++ b/rfc/2560/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-const asn1 = require('asn1.js');
++const asn1 = require('../../lib/asn1.js');
+ const rfc5280 = require('asn1.js-rfc5280');
+ 
+ const OCSPRequest = asn1.define('OCSPRequest', function() {
+--- a/rfc/5280/index.js
++++ b/rfc/5280/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-const asn1 = require('asn1.js');
++const asn1 = require('../../lib/asn1.js');
+ 
+ /**
+  * RFC5280 X509 and Extension Definitions

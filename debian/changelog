@@ -1,0 +1,112 @@
+node-asn1.js (5.4.1-2) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Submit.
+  * Mark as Multi-Arch: foreign
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 31 Aug 2021 20:29:21 +0000
+
+node-asn1.js (5.4.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * Replace embedded safer-buffer by a dependency to
+    node-safe-buffer ≥ 5.2.1+~cs2.1.2
+  * New upstream version 5.4.1
+  * Fix component tests
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Nov 2020 11:48:49 +0100
+
+node-asn1.js (5.3.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Bastien Roucariès ]
+  * New upstream version 5.3.0
+  * Replace minimalistic-assert by assert
+  * Use local copy of rfc package
+  * Use local install of asn1.js
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Embed safer-buffer
+  * Update copyright
+  * Drop unneeded version constraints from (build) dependencies
+  * Manage rfc/* modules as additional components
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 22 May 2020 08:52:12 +0200
+
+node-asn1.js (5.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Switch test and install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 18 Nov 2019 20:01:07 +0100
+
+node-asn1.js (5.2.0-1) unstable; urgency=medium
+
+  * New upstream version: improve code size on minified
+    version by avoiding a circular reference.
+  * Bump compat and debhelper.
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 03 Sep 2019 22:57:10 +0200
+
+node-asn1.js (5.0.1-2) unstable; urgency=medium
+
+  * Fix debci with nodejs (>= 10)
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 01 Jan 2019 16:44:33 +0100
+
+node-asn1.js (5.0.1-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 25 Jun 2018 17:36:06 +0200
+
+node-asn1.js (5.0.0-5) unstable; urgency=medium
+
+  * Use correct git repo address
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 16 May 2018 16:25:52 +0200
+
+node-asn1.js (5.0.0-4) unstable; urgency=medium
+
+  * Fix address of git repo
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 14 May 2018 12:09:11 +0200
+
+node-asn1.js (5.0.0-3) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump compat and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 14 May 2018 11:57:54 +0200
+
+node-asn1.js (5.0.0-2) unstable; urgency=medium
+
+  * Bug fix: "node-asn1.js FTBFS: Error: Cannot find module
+    "asn1.js", thanks to Adrian Bunk (Closes: #881292).
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 10 Nov 2017 13:27:42 +0100
+
+node-asn1.js (5.0.0-1) unstable; urgency=medium
+
+  [ Pirate Praveen ]
+  * update description to mention DER encoding
+
+  [ Bastien Roucariès ]
+  * use nocheck
+  * no upstream version
+  * move to section javascript
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 09 Nov 2017 12:08:59 +0100
+
+node-asn1.js (4.9.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #860332)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 17 Apr 2017 21:57:37 +0200

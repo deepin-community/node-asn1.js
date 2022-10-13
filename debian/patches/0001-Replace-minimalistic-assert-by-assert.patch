@@ -1,0 +1,37 @@
+From 4918b988ece16377fd76711dd3d0a2772a71f58b Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Mon, 17 Apr 2017 21:42:00 +0200
+Subject: Replace minimalistic-assert by assert
+
+Forwarded: no
+---
+ lib/asn1/base/node.js | 2 +-
+ package.json          | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/lib/asn1/base/node.js b/lib/asn1/base/node.js
+index d676d21..9a78579 100644
+--- a/lib/asn1/base/node.js
++++ b/lib/asn1/base/node.js
+@@ -3,7 +3,7 @@
+ const Reporter = require('../base/reporter').Reporter;
+ const EncoderBuffer = require('../base/buffer').EncoderBuffer;
+ const DecoderBuffer = require('../base/buffer').DecoderBuffer;
+-const assert = require('minimalistic-assert');
++const assert = require('assert');
+ 
+ // Supported tags
+ const tags = [
+diff --git a/package.json b/package.json
+index 6280de3..dfd01c8 100644
+--- a/package.json
++++ b/package.json
+@@ -30,7 +30,7 @@
+   "dependencies": {
+     "bn.js": "^4.0.0",
+     "inherits": "^2.0.1",
+-    "minimalistic-assert": "^1.0.0",
++    "assert": "^1.0.0",
+     "safer-buffer": "^2.1.0"
+   }
+ }

@@ -1,0 +1,39 @@
+Source: node-asn1.js
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , mocha <!nocheck>
+ , node-assert <!nocheck>
+ , node-bn.js <!nocheck>
+ , node-inherits <!nocheck>
+ , node-safe-buffer (>= 5.2.1+~cs2.1.2) <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-asn1.js
+Vcs-Git: https://salsa.debian.org/js-team/node-asn1.js.git
+Homepage: https://github.com/indutny/asn1.js
+Rules-Requires-Root: no
+
+Package: node-asn1.js
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends}
+ , node-assert
+ , node-bn.js
+ , node-inherits
+ , node-safe-buffer (>= 5.2.1+~cs2.1.2)
+Provides: ${nodejs:Provides}
+Description: ASN.1 encoder and decoder (DER)
+ Asn1.js is a pure javascript ASN.1 encoder and decoder. Currently DER encoding
+ is supported.
+ .
+ Abstract Syntax Notation One (ASN.1) is an interface description
+ language for defining data structures that can be serialized and
+ deserialized in a standard, cross-platform way.
+ .
+ Node.js is an event-based server-side JavaScript engine.
